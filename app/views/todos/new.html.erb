@@ -1,0 +1,22 @@
+<h1>NEW TODO</h1>
+
+
+
+<%= form_with model: Todo.new, local: true do |form| %>
+<div class="container">
+<div class="input-group">
+  <ul class="list-group">
+    <li>
+      <%= form.label :description, "Detalle de la tarea" %>
+      <%= form.text_area :description %>
+    </li>
+    <li>
+      <%= form.label :completed, "Completado?" %>
+      <%= form.check_box :completed %>
+    </li>
+
+      <input class="btn btn-lg btn-primary btn-block" type="submit" <%= form.submit "Crear" %> 
+ </ul>
+</div>
+</div>
+<% end %>

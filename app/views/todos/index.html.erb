@@ -1,0 +1,6 @@
+<h1><%= link_to "Crear Nuevo", todos_new_path %></h1>
+
+<% @todos.each do |todo| %>
+  <h3 class="well"> <%= todo.description %> </h3>
+  <p class="well"> <%= todo.completed %> </p>
+<% end %>
