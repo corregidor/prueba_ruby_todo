@@ -2,7 +2,7 @@
 
 <% @todos.each do |todo| %>
   <div class="well">
-    <h3> <%= todo.description %> </h3>
+    <h3> <%= link_to todo.description, todo %> </h3>
     <p> <%= todo.completed %> </p>
   </div>
 <% end %>
