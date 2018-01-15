@@ -1,8 +1,10 @@
+<div class="container">
 <h1><%= link_to "Crear Nuevo", todos_new_path %></h1>
 
-<% @todos.each do |todo| %>
-  <div class="well">
-    <h3> <%= link_to todo.description, todo %> </h3>
-    <p> <%= todo.completed %> </p>
-  </div>
-<% end %>
+  <% @todos.each do |todo| %>
+    <div class="well">
+      <h3> <%= link_to todo.description, todo %> </h3>
+      <p> <%= todo.completed %> </p>
+    </div>
+  <% end %>
+</div>

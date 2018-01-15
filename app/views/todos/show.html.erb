@@ -2,5 +2,6 @@
   <h1> <%= @todo.description %>  </h1>
   <p> <%= @todo.completed %> </p>
   <p> Creado hace acerca de: <%= time_ago_in_words @todo.created_at %> </p>
+  <%= link_to "editar", todo_path %>
 
 </div>
