@@ -1,4 +1,10 @@
 <div class="container">
   <h1>Editar <small>Tarea</small></h1>
   <%= render 'form' %>
+  <div class="container">
+    <p>
+      <%= link_to 'Mostrar', @todo %> |
+      <%= link_to 'Atrás', todos_path %>
+    </p>
+  </div>
 </div>

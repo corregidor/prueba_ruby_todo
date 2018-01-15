@@ -5,7 +5,11 @@
     <div class="well">
       <h3> <%= link_to todo.description, todo %> </h3>
       <p> <%= todo.completed %> </p>
-      <p> <%= link_to "Borrar", todo, method: :delete %> </p>
+      <p><%= link_to 'Editar', edit_todo_path(todo) %> |
+      <%= link_to "Completado", complete_path(todo) %> | 
+      <%= link_to "Borrar", todo, method: :delete, data: { confirm: '¿Estás Seguro?' } %>
+
+      </p>
     </div>
   <% end %>
 </div>
