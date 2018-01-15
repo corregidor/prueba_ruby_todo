@@ -1,26 +1,4 @@
-
-
-
-<%= form_with model: Todo.new, local: true do |form| %>
-<form>
 <div class="container">
   <h1>Nueva <small>Tarea</small></h1>
-  <div class="form-group">
-
-    <label>  <%= form.label :description, "Detalle de la tarea" %> </label>
-    <input placeholder="detalle" <%= form.text_area :description %>  </input>
-  </div>
-
-  <div class="form-group">
-    <label>  <%= form.label :completed, "Completado?" %> </label>
-    <input  <%= form.check_box :completed %> </input>
-  </div>
-
-  <div class="form-group">
-    <input class="btn btn-lg btn-primary" type="submit" <%= form.submit "Crear" %>
-  </div>
-
+  <%= render 'form' %>
 </div>
-</div>
-</form>
-<% end %>
