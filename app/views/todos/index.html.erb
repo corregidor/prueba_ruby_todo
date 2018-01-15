@@ -5,6 +5,7 @@
     <div class="well">
       <h3> <%= link_to todo.description, todo %> </h3>
       <p> <%= todo.completed %> </p>
+      <p> <%= link_to "Borrar", todo, method: :delete %> </p>
     </div>
   <% end %>
 </div>
