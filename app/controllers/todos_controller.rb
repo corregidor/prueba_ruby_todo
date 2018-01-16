@@ -1,7 +1,12 @@
 class TodosController < ApplicationController
   before_action :find_todo, only: [:show, :edit, :update, :destroy, :complete]
 
+
   def index
+    @todos = Todo.all
+  end
+  
+  def list
     @todos = Todo.all
   end
 

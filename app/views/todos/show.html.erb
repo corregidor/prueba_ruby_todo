@@ -1,7 +1,10 @@
-<div class="container well">
-  <h1> <%= @todo.description %>  </h1>
-  <p> <%= @todo.completed %> </p>
-  <p> Creado hace acerca de: <%= time_ago_in_words @todo.created_at %> </p>
-  <%= link_to "editar", edit_todo_path %>
+<%= render 'navbar' %>
+<div class="container" style="padding: 50px;">
+  <div class="well">
 
+    <h1> <%= @todo.description %>  </h1>
+    <p> <%= @todo.completed %> </p>
+    <p> Creado hace acerca de: <%= time_ago_in_words @todo.created_at %> </p>
+    <%= link_to "editar", edit_todo_path %>
+  </div>
 </div>
